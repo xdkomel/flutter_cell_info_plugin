@@ -65,8 +65,9 @@ class _MyAppState extends State<MyApp> {
       String? simInfo = await CellInfo.getSIMInfo;
       final simJson = json.decode(simInfo!);
       print("display name ${SIMInfoResponse.fromJson(simJson).simInfoList}");
-    } on PlatformException {
+    } on PlatformException catch (e) {
       _cellsResponse = null;
+      print(e);
     }
 
     // If the widget was removed from the tree while the asynchronous platform
