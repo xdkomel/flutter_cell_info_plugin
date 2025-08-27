@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 class CellInfo {
   /// Returns a JSON string containing information about the cell.
   static const MethodChannel _channel = MethodChannel(
-    'com.xdkomel.flutter_cell_info_plugin/method_channel',
+    'com.sumanrajpathak.flutter_cell_info/method_channel',
   );
 
   /// Returns a JSON string containing information about the cell.
